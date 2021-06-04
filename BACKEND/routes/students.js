@@ -21,6 +21,14 @@ router.route("/add").post((req,res)=>{
     })
 })
 
+router.route("/").get((students)=>{
+    students.find().then((students)=>{
+        res.json(students)
+    }).catch((err)=>{
+        console.log(err);
+    })
+})
+
 
 
 
