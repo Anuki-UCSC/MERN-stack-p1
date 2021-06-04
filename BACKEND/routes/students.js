@@ -21,9 +21,9 @@ router.route("/add").post((req,res)=>{
     })
 })
 
-router.route("/").get((students)=>{
-    students.find().then((students)=>{
-        res.json(students)
+router.route("/").get((req,res)=>{
+    Student.find().then((students)=>{
+        res.json(students);
     }).catch((err)=>{
         console.log(err);
     })
@@ -65,7 +65,7 @@ router.route("/delete/:id").delete(async (req,res)=>{
 })
 
 
-router.route("/get/:id").get((req,res)=>{
+router.route("/get/:id").get(async (req,res)=>{
     let userId=req.params.id;
 
     const user =await Student.findById(userId)
