@@ -29,7 +29,27 @@ router.route("/").get((students)=>{
     })
 })
 
+//https://
+router.route("/update/:id").put(async (req,res) => {
+    let userId=req.params.id;
+    const {name, age,grat_year}=req.body;
 
+    const updateStudent={
+        name,
+        age,
+        grat_year
+    }
+
+    const update =await Student.findByIdAndUpdate(userId,updateStudent)
+    .then(()=>{
+        res.status(200).send({status:"update successful !",user: update})
+    }).catch((err)=>{
+        console.log(err);
+        res.status(500).send({status:"update failed due to error! error : ",err:err.massage})
+    })
+
+    
+})
 
 
 module.exports=router;
