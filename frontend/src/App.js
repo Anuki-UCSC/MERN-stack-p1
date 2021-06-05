@@ -1,23 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import State_class from "./components/State_class";
+import  Counter_funtion from "./components/Counter_function";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>hello</h1>
+      {/* <State_class/>
+      < Counter_funtion/> */}
+
+      
     </div>
   );
 }
