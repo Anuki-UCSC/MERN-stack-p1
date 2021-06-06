@@ -12,9 +12,9 @@ function Header(){
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div className="navbar-nav">
             <a className="nav-link active" aria-current="page" href="#">Home</a>
-            <a className="nav-link" href="#">Features</a>
-            <a className="nav-link" href="#">Pricing</a>
-            <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <a className="nav-link" href="./add">Create Student</a>
+            <a className="nav-link" href="#">All Students</a>
+            <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Update Student</a>
         </div>
         </div>
     </div>
