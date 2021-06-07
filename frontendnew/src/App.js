@@ -12,6 +12,7 @@ function App() {
       <div>
       <Header/>
       <div className="container">
+          <AddStudents/>
           <State_class/>
           < Counter_funtion/>
           
