@@ -1,37 +1,3 @@
-// const express=require('express');
-// const mongoose=require('mongoose');
-// const bodyParser=require('body-parser');
-// const cors=require('cors');
-// const dotenv=require('dotenv');
-// const app=express();
-// require(dotenv).config();
-
-// const PORT =process.env.PORT || 8074;  // available port  or|| 8070 port
-
-// app.use(cors());
-// app.use(bodyParser.json());
-
-// const URL=process.env.MONGODB_URL;
-
-// mongoose.connect(URL,{
-//     useCreateIndex:true,
-//     useNewUrlParser:true,
-//     useUnifiedTopology:true,
-//     useFindAndModify:true
-// });
-
-// const connection=mongoose.connection;
-// connection.once("open",()=>{
-//     console.log("MongoDB connection Success!");
-// });
-
-// app.listen(PORT, ()=>{
-//     console.log(`Server is up and running on port number :`+PORT);
-// });
-
-
-
-
 const express=require("express");
 const mongoose=require("mongoose");
 const bodyParser=require("body-parser");
@@ -72,4 +38,17 @@ app.listen(PORT,()=>{
 })
 
 
-///// "cons": "0.0.2",
+
+
+//****************************************************************
+// mean crud app 
+
+// const express = require("express");
+
+// const app = express();
+
+// const PORT=8000;
+
+// app.listen(post,()->{
+//     console.log("App is running on ${}")
+// })
