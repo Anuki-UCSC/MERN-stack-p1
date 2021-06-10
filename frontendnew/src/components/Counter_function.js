@@ -8,14 +8,15 @@ function Counter_funtion(){
     }
 
     return(
-        <div>
+        <div><span class="border border-info">
+
             <hr/>
             <center>
             <h3>Function Component</h3>
             <h1>Counter = {number}</h1>
             <button onClick={increment}>Incriment</button>
             </center>
-            
+            </span> 
         </div>
     )
 }
