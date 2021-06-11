@@ -42,28 +42,34 @@ export default class App extends Component{
     };
   }
 
-componentDidMount()
-{
-  this.retrieveStudents();
-}
+  componentDidMount()
+  {
+    this.retrieveStudents();
+  }
 
-retrieveStudents(){
-  axios.get("http://localhost:8070/student").then(res=>{
-    if(res.data.success){
-      this.setState({
-        students:res.data.existingStudent
-      });
+  retrieveStudents(){
+    axios.get("http://localhost:8070/student").then(res=>{
+      if(res.data.success){
+        this.setState({
+          students:res.data.existingStudent
+        });
 
-      console.log(this.state.students);
-    }
-  });
-}
+        console.log(this.state.students);
+      }
+    });
+  }
 
 
   render(){
     return(
+      
       <div>
-       {this.state.students.map(student=>(
+        <p>All Posts</p>
+
+
+
+
+        {this.state.students.map(student=>(
          <div>
            <ul>
            <li>{student.name}</li>
