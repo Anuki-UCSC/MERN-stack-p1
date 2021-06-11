@@ -23,7 +23,7 @@ router.route("/add").post((req,res)=>{
 
 router.route("/").get((req,res)=>{
     Student.find().then((students)=>{
-        res.json(students);
+        res.json({existingStudent:students, success:true});
     }).catch((err)=>{
         console.log(err);
     })
