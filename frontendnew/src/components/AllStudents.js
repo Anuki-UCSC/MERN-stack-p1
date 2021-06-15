@@ -40,8 +40,8 @@ export default class AllStudents extends Component{
             <th scope="col">#</th>
             <th scope="col">Full Name</th>
             <th scope="col">Age</th>
-            <th scope="col">Graguation year</th>
-            <th scope="col">Graguation year</th>
+            <th scope="col">Graduation year</th>
+            <th scope="col">Options</th>
           </tr>
         </thead>
         <tbody>
