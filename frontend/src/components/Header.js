@@ -1,4 +1,10 @@
 import React from "react";
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
 
 function Header(){
 
@@ -11,10 +17,13 @@ function Header(){
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div className="navbar-nav">
-            <a className="nav-link active" aria-current="page" href="#">Home</a>
-            <a className="nav-link" href="./add">Create Student</a>
-            <a className="nav-link" href="#">All Students</a>
-            <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Update Student</a>
+            <Router>
+            <Link className="nav-link active" aria-current="page" href="#">Home</Link>
+            <Link className="nav-link" href="./add">Create Student</Link>
+            <Link className="nav-link" href="#">All Students</Link>
+            <Link className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Update Student</Link>
+
+            </Router>
         </div>
         </div>
     </div>

@@ -6,8 +6,7 @@ import AddStudents from "./components/AddStudents";
 import AllStudents from "./components/AllStudents";
 import EditStudent from "./components/EditStudent";
 import GetStudent from "./components/GetStudent";
-
-import {BrowserRouter as Router ,Route} from "react-router-dom";
+import {BrowserRouter as Router ,Route,Switch} from "react-router-dom";
 import axios from 'axios';
 import { Component } from 'react';
 
@@ -19,15 +18,19 @@ function App() {
       <div>
       <Header/>
       <div className="container">
-          <AddStudents/>
-          <State_class/>
-          < Counter_funtion/>
+        {/* <AllStudents/>
+        <AddStudents/>
+        <EditStudent/>
+        <GetStudent/> */}
           
           <div className="container">
-          <Route path="./add" extract component={AddStudents}/>
-          <Route path="./show" extract component={AllStudents}/>
-          <Route path="./edit/:id" extract component={EditStudent}/>
-          <Route path="student/:id" extract component={GetStudent}/>
+            <Switch>
+                <Route path="/add" extract component={AddStudents}/>
+                <Route path="/edit/:id" extract component={EditStudent}/>
+                <Route path="student/:id" extract component={GetStudent}/>
+                <Route path="/" extract component={AllStudents}/>
+            </Switch>
+          
           </div>
       
       </div>
