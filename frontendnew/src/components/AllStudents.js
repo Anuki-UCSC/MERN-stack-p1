@@ -49,12 +49,18 @@ export default class AllStudents extends Component{
         {this.state.students.map((student,index)=>(
          
            <tr>
-            <th scope="row">{index +1}</th>
-            <td>{student.name}</td>
+            <th scope="row">{index +1} {student._id}</th>
+            <td>
+                <a class="stnames" href={`/get/${student._id}`} style={{textDecoration:'none'}} >
+                {student.name}
+                </a>
+                
+                
+            </td>
             <td>{student.age}</td>
             <td>{student.grat_year}</td>
             <td>
-              <a className="btn btn-warning" href="#">
+              <a className="btn btn-warning" href={`/edit/${student._id}`}>
                 <i className="fas fa-edit"></i>&nbsp;Edit
               </a>&nbsp;
               <a className="btn btn-danger" href="#">
@@ -65,7 +71,11 @@ export default class AllStudents extends Component{
     ))}
           
         </tbody>
-      </table>     
+      </table>    
+
+        <a href="/add">
+          <button type="button" className="btn btn-success">Add Student</button>
+        </a>
       </div>
       )
   }
