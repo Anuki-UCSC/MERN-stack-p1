@@ -27,7 +27,7 @@ function App() {
             <Switch>
                 <Route path="/add" extract component={AddStudents}/>
                 <Route path="/edit/:id" extract component={EditStudent}/>
-                <Route path="student/:id" extract component={GetStudent}/>
+                <Route path="/get/:id" extract component={GetStudent}/>
                 <Route path="/" extract component={AllStudents}/>
             </Switch>
           
