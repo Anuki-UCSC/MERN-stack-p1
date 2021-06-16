@@ -70,7 +70,7 @@ router.route("/get/:id").get(async (req,res)=>{
 
     const user =await Student.findById(userId)
     .then((student)=>{
-        res.status(200).send({status:"Successfully fetched! ", data:student});
+        res.status(200).send({status:"Successfully fetched! ", studentData:student, success:true});
     }).catch(()=>{
         res.status(500).sent({status:"find by id not successful "});
     })
