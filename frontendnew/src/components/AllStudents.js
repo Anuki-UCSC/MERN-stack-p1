@@ -28,6 +28,17 @@ export default class AllStudents extends Component{
     });
   }
 
+  stDelete =(id)=> {
+    alert("Do you want to delete the record ?");
+    axios.delete(`http://localhost:8070/student/delete/${id}`).then(res=>{
+      if(res.data.sucess){
+          alert("succesfully deleted the massage");
+          
+      }
+      this.retrieveStudents();
+    })
+  }
+
 
   render(){
     return(
@@ -63,7 +74,7 @@ export default class AllStudents extends Component{
               <a className="btn btn-warning" href={`/edit/${student._id}`}>
                 <i className="fas fa-edit"></i>&nbsp;Edit
               </a>&nbsp;
-              <a className="btn btn-danger" href="#">
+              <a className="btn btn-danger" href="#" onClick={()=>this.stDelete(student._id)}>
               <i className="fas fa-trash-alt"></i>&nbsp;Delete
               </a>
             </td>
