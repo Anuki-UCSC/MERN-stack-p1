@@ -1,14 +1,14 @@
 import './App.css';
-import State_class from "./components/State_class";
-import  Counter_funtion from "./components/Counter_function";
+// import State_class from "./components/State_class";
+// import  Counter_funtion from "./components/Counter_function";
 import Header from "./components/Header";
 import AddStudents from "./components/AddStudents";
 import AllStudents from "./components/AllStudents";
 import EditStudent from "./components/EditStudent";
 import GetStudent from "./components/GetStudent";
 import {BrowserRouter as Router ,Route,Switch} from "react-router-dom";
-import axios from 'axios';
-import { Component } from 'react';
+// import axios from 'axios';
+// import { Component } from 'react';
 
 
 
