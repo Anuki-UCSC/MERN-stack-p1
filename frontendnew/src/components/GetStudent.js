@@ -26,11 +26,11 @@ export default class GetStudent extends Component{
 
     render(){
 
-        const {name , age, grat_year} = this.state.student;
+        const {_id, name , age, grat_year} = this.state.student;
 
         return(
-
-            <dl class="row">
+            <div>
+                <dl class="row">
 
                 <h1>Profile</h1>
                 <hr />
@@ -44,8 +44,14 @@ export default class GetStudent extends Component{
 
                 <dt class="col-sm-3">Graduation Year</dt>
                 <dd class="col-sm-9">{grat_year}</dd>
+                
 
-            </dl>
+                </dl>
+                <a className="btn btn-primary" href={"/edit/"+_id}>
+                <i className="fas fa-edit"></i>&nbsp;Edit Profile
+                </a>
+            </div>
+            
             
         )
     }

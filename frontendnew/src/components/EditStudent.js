@@ -72,6 +72,9 @@ componentDidMount(){
     render() {
         return(
             <div className="container">
+                <div className="shadow p-2 mb-5 bg-white rounded">
+                <h2>Update Student</h2>
+                </div>
                 <form className="needs-validation" noValidate>
                     <div className="form-group" style={{marginTop:'15px'}}>
                     <label>Name</label>

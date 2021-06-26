@@ -27,6 +27,11 @@ export default function AddStudents(){
         <div>
         <form>
             <div className="container">
+                <div className="shadow p-2 mb-5 bg-white rounded">
+                <h2>Add Student</h2>
+                </div>
+                
+                
             <div class="form-group">
                     <label for="exampleInputEmail1">Name</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"
@@ -59,7 +64,9 @@ export default function AddStudents(){
                
 
 
-                <button type="submit" class="btn btn-primary" onClick={sendData}>Submit</button>
+                <button type="submit" class="btn btn-primary" onClick={sendData}>
+                <i class="fa fa-plus" aria-hidden="true"></i>
+                &nbsp;&nbsp;Add student</button>
             </div>
                 
         </form>

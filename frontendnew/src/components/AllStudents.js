@@ -60,7 +60,7 @@ export default class AllStudents extends Component{
         {this.state.students.map((student,index)=>(
          
            <tr>
-            <th scope="row">{index +1} {student._id}</th>
+            <th scope="row">{index +1}</th>
             <td>
                 <a class="stnames" href={`/get/${student._id}`} style={{textDecoration:'none'}} >
                 {student.name}
