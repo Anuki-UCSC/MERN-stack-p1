@@ -9,7 +9,8 @@ function Header(){
 <div class="shadow p-3 mb-5 bg-body rounded">
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">Navbar</a>
+                <a className="navbar-brand" href="#"><i class="fa fa-bars" aria-hidden="true"></i>
+                &nbsp;&nbsp;&nbsp;Dashboard</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
                 </button>
